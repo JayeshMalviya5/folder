@@ -3,7 +3,7 @@ import Folder from "./components/Folder";
 import "./styles.css";
 import { useDispatch, useSelector } from "react-redux";
 import { ADDFOLDER, addFolder } from "./store/action";
-
+// 
 export default function App() {
   // const [explorerData, setExplorerData] = useState(explorer);
   const explorerData = useSelector((state) => state);
