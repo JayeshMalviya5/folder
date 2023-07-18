@@ -5,16 +5,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { ADDFOLDER, addFolder } from "./store/action";
 // 
 export default function App() {
-  // const [explorerData, setExplorerData] = useState(explorer);
   const explorerData = useSelector((state) => state);
   const dispatch = useDispatch();
 
-  // const { insertNode } = useTraverseTree();
-
   const handleInsertNode = (folderId, item, isFolder) => {
     dispatch(addFolder({explorerData,folderId,item,isFolder}));
-    // const finalTree = insertNode(explorerData, folderId, item, isFolder);
-    // setExplorerData(finalTree);
   };
 
   return (
@@ -24,4 +19,3 @@ export default function App() {
   );
 }
 
-// fix connect script in latest video
